@@ -81,14 +81,17 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
+    // Choose how many rounds this game has
     const times = 5;
 
     for(let i = 0; i < times; i++){
         const humanSelection = getHumanChoice();
 
+        // If humanSelection is falsy, i will be subtracted one, where later one is added again, which keeps i unchanged
         if (!humanSelection) {
             console.log("Invalid choice! Please return Rock, Paper or Scissors.");
             i--;
+            // continue skips the rest of the for loop, and runs it again
             continue;
         }
 
