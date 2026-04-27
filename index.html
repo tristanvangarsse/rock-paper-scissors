@@ -4,12 +4,31 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <style>
+            body {
+                margin: 20px;
+            }
+            .stats {
+                min-height: 60px;
+                margin-bottom: 20px;
+            }
+            #winner {
+                color: rgb(0, 0, 153);
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
+        <h3>Rock Paper Scissors</h3>
+        <h4>Results:</h4>
+        <div class="stats">
+            <div id="results"></div>
+            <div id="score"></div>
+            <div id="winner"></div>
+        </div>
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button id="Scissors">Scissors</button>
+        <script src="./script.js"></script>
     </body>
 </html>
